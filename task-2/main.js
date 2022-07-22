@@ -8,4 +8,10 @@ let children = [
     {title:'Lalə', weight: 35}, 
     {title:'Samir', weight: 39}, 
 ]
-    // Write code here
+let max = 0;
+for(let obj of children){
+    if(obj.weight > max){
+        max = obj.weight;
+    }
+}
+console.log(max)
