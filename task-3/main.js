@@ -8,3 +8,23 @@ let = [
     {marka:'BMW', rəng: 'Göy', anacaqNövü: 'Benzin', sürətlərQutusu: 'Mexanika', banNövü: 'Hetçbek', qiymət: 16000},
 ]
     // Write code here
+
+
+    let mycriteria = ['Avtomat','Benzin','Sedan'];
+    let count = 0;
+    let countMain= 0;
+    for(let i = 0; i<obj.length;i++){
+        // debugger    
+    for(let key in obj[i]){
+        if(mycriteria.includes(obj[i][key]) || obj[i][key] < 30000){
+            count++
+            if(count >= 3 ){
+                countMain++;
+                break;
+            }
+        }
+    }
+    count = 0;
+    
+    }   
+    console.log(count,countMain);
